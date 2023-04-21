@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Week 01 Project</title>
+    <link rel="stylesheet" href="Assets/CSS/buildWeek01.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img id="logo" src="Assets/Img/epicode_logo.png" alt="epicodeLogo">
+        </div>
+    </header>
+
+    <main id="main03">
+        <div id="div01">
+            <h1 id="titoloPagina03">Results</h1>
+            <p id="paragrafoPagina03">The summary of your answers</p>
+        </div>
+
+        <div id="container">
+            <div id="sinistra">
+                <p id="sinistraP">Correct</p>
+                <p id="risultatoPositivo"></p>
+                <div id="rispostaPositiva"></div>
+            </div>
+            <div id="grafico">
+                <canvas id="ruotaRisultati"></canvas>   
+                <div id="valutazioni">da sostituire con js</div>
+            </div>
+            <div id="destra">
+                <p id="destraP">Wrong</p>
+                <p id="risultatoNegativo"></p>
+                <div id="rispostaNegativa"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer03">
+            <form action="/submit-form" method="post" id="form03">
+                <button type="submit" id="buttonPagina03"><a id="linkPagina03" href="buildWeek01-pagina04.html">RATE US</a></button>
+            </form>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="Assets/JS/buildWeek01-pagina03.js"></script>
+</body>
+
+</html>

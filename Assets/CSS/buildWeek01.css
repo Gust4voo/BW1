@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,
+html {
+  
+  object-fit: cover;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  background-image: url(../Img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+#logo {
+  width: 250px;
+  margin: 30px 100px;
+  margin-top: 70px;
+}
+
+
+#main1 {
+  padding: 30px;
+  margin-left: 100px;
+}
+
+#titoloPagina01 {
+  line-height: 0.9em;
+  font-family: 'Outfit', sans-serif;
+  margin-left: 0;
+  font-size: 120px;
+
+}
+
+span {
+  font-weight: 300;
+}
+
+h3 {
+  margin-bottom: 0;
+  font-size: 50px;
+  color: #D20094;
+}
+
+p {
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 15px;
+  margin-bottom: 85px;
+}
+
+ul li {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 1.7em;
+}
+
+footer {
+  margin-left: 100px;
+}
+
+form {
+  padding-top: 80px;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 4px solid white;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "\2713";
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 25px;
+  color: white;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  background-color: transparent;
+}
+
+label {
+  margin-left: 10px;
+}
+
+#buttonPagina01 {
+  margin-left: 450px;
+  background-color: #00ffff;
+  -webkit-box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  -moz-box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  -o-box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  right: 100px;
+  width: 340px;
+  height: 100px;
+  border: transparent;
+  font-family: 'Outfit', sans-serif;
+  font-size: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Pagina 02 */
+
+#main2 {
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/*Benchmark Timer*/
+
+#app {
+  margin-left: 120em
+}
+
+.logo-container {
+  height: 8em;
+}
+
+/* .base-timer è la classe utilizzata per il timer circolare. Viene impostata la sua posizione come "relative", che indica che gli elementi figli saranno posizionati relativamente a questo elemento padre. Inoltre, viene impostata una larghezza e altezza di 200 pixel. */
+
+.base-timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* .base-timer__label è la classe utilizzata per il testo del timer. Viene impostata la sua posizione come "assoluta" rispetto all'elemento padre, che nel nostro caso è .base-timer. La larghezza e l'altezza sono impostate su 200 pixel, mentre la proprietà top imposta la distanza dall'alto come 0. */
+
+.base-timer__label {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+/* .base-timer__circle è la classe utilizzata per il cerchio del timer. La proprietà fill viene impostata come "none", che indica che il cerchio non deve essere riempito. */
+
+.base-timer__circle {
+  fill: none;
+}
+
+/* .base-timer__path-elapsed è la classe utilizzata per la linea che rappresenta il tempo trascorso. La proprietà stroke-width imposta la larghezza della linea a 7 pixel, mentre stroke viene impostata come "transparent" per rendere la linea invisibile. */
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: transparent;
+}
+
+/* .base-timer__path-remaining è la classe utilizzata per la linea che rappresenta il tempo rimanente. */
+
+.base-timer__path-remaining {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+  color: #00ffff;
+}
+
+#quiz {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#risposte {
+  text-align: center;
+}
+
+#domande {
+  padding-bottom: 1em;
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#boxes {
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  width: 50%;
+  text-align: center;
+  padding-left: 25%;
+}
+
+.choice {
+  height: 8vh;
+  width: 40vh;
+  font-size: 1.7em;
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.164);
+  border-radius: 50px;
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, 0.22); 
+  box-shadow: -1px -1px 0px 1px white;
+  margin-left: 5%;
+  vertical-align: middle; 
+  margin-bottom: 2%;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg,
+      rgb(206, 6, 183) 0%,
+      35%,
+      rgb(135, 2, 115) 100%);
+}
+
+#footerBenchmark {
+  margin-left: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 5%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  max-width: 1200px;
+}
+
+#pink {
+  color: #c2128d;
+}
+
+#footerBenchmark {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 5%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Pagina 03 */
+
+#main03 {
+  text-align: center;
+}
+
+#titoloPagina03 {
+  text-align: center;
+  font-size: 90px;
+  margin-bottom: 0;
+}
+
+#paragrafoPagina03 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+#div01 {
+  line-height: 80px;
+}
+
+.rispostaP {
+  font-size: 90px;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+}
+
+.p1 {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+.p2wrong {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #c2128d;
+}
+
+.p2correct {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.p3 {
+  font-size: 20px;
+  color: #abb3b3e9;
+}
+
+
+
+#valutazioni {
+  margin-top: 7em;
+  text-align: center;
+  position: fixed;
+  width: 150px;
+  height: 100px;
+}
+
+#grafico {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+#sinistraP {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#destraP {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#sinistra {
+  margin-right: 35rem;
+}
+
+#destra {
+  margin-left: 35rem;
+}
+
+#risultatoPositivo {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+#risultatoNegativo {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+#footer03 {
+  margin-bottom: 150px;
+  text-align: center;
+  margin-left: 0;
+}
+
+#form03 {
+  text-align: center;
+  margin: 0;
+}
+
+#buttonPagina03 {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: solid 3px white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  width: 400px;
+  height: 110px;
+  cursor: pointer
+}
+
+link:visited {
+  color: white;
+}
+
+#linkPagina03 {
+  color: white;
+}
+
+/* Pagina 04 */
+
+#titoloPagina04 {
+  text-align: center;
+  font-size: 90px;
+  margin-bottom: 0;
+}
+
+.starColor {
+  cursor: pointer;
+  margin-bottom: 4rem;
+  margin-left: 20px;
+}
+
+#stars {
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.starColor.selected {
+  content: url("../Img/star\ 2.svg");
+}
+
+.paragrafoPagina04 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 25px;
+}
+
+#commenti {
+  color: #D20094;
+  font-size: 35px;
+  margin-left: 42rem;
+  padding: 15px;
+  padding-right: 41.5rem;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 3px;
+  border-left: none;
+  outline: none;
+
+}
+
+#footer04 {
+  text-align: center;
+  margin-left: 0;
+}
+
+#buttonPagina04 {
+  text-align: center;
+  background-color: #00ffff;
+  -webkit-box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  -moz-box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  -o-box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  box-shadow: inset 1px -50px 0px -100px #00FFFF, 0px -1px 44px 3px #00FFFF;
+  right: 100px;
+  width: 340px;
+  height: 100px;
+  border: transparent;
+  font-family: 'Outfit', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer
+}
